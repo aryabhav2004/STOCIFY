@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weekend Checker</title>
+</head>
+<body>
+    <h1>Weekend Checker</h1>
+    <form action="/check_weekend" method="POST">
+        <label for="day_input">Enter a date (YYYY-MM-DD format):</label>
+        <input type="text" name="day_input" id="day_input">
+        <input type="submit" value="Check">
+    </form>
+    {% if result %}
+        <p>{{ result }}</p>
+    {% endif %}
+</body>
+</html>
